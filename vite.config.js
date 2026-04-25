@@ -10,3 +10,4 @@ export default defineConfig({
     setupFiles: './src/__tests__/setup.jsx',
   }
 })
+// updated for CodeGrade/Vite lab
