@@ -1,8 +1,8 @@
 import { useState } from "react"
-import hogsData from "../porkers_data"
-import HogList from "./HogList"
-import HogForm from "./HogForm"
-import HogControls from "./HogControls"
+import hogsData from "./porkers_data"
+import HogList from "./components/HogList"
+import HogForm from "./components/HogForm"
+import HogControls from "./components/HogControls"
 
 function App() {
   const [hogs, setHogs] = useState(hogsData)
@@ -14,7 +14,7 @@ function App() {
     setHiddenHogs((prev) => [...prev, name])
   }
 
-  const handleAddHog = (newHog) => {
+ const handleAddHog = (newHog) => {
   setHogs((prev) => [newHog, ...prev])
 }
 
